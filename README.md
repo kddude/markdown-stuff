@@ -208,3 +208,119 @@ A date to show. Additionally, this can be a non-date string if you want.
 
 Subtext to show below the date.
 
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+# List
+
+![Card-List](http://i.imgur.com/NPYAHUf.png)
+	
+	<oris-card-list 
+		list="items">
+	</oris-card-list>
+        
+        
+    items: 
+    [
+      {
+        name: "For Check",
+      },
+      {
+        name: "<p>Pending Fully Executed Agreement</p>",
+      },
+    ],
+---
+
+The progress-line directive accepts one input:
+
+* `list`
+	       
+---
+####list (array of objects)
+
+The list input accepts an array of objects with the following property or more:
+
+* `name`
+
+The 'name' property will be displayed in the list section. This can be HTML, numbers, dates, or just plain strings.
+
+Anything else is additional and may be passed in as desired. The minimum array you can pass in would look like this:
+
+	[{name: 'hi'}]
+
+
+#####passing in more advanced html
+
+![example](http://i.imgur.com/iBj7RVK.png)
+
+	htmlToPassIn = "<a href="#"> <code> For Check </code></a>'"
+	
+	items: 
+    [
+      {
+        name: {{htmlToPassIn}},
+      },
+    ],
+    
+  
+With this method, you may not pass in HTML that may compromise the security of the app. Angular will automatically filter out anything such as <html style="color: red;">, or any other attributes inside the html like that. This includes angular directives.
+
+
+
+
+
+
+---
+
+
+
+
+
+
+# Quote
+
+![Card-Quote](http://i.imgur.com/VIbLFJV.png)
+	
+	<oris-card-quote
+      quote="Placed on Hold."
+      author="Kamran Salehi"
+      date="08/17/2015">
+    </oris-card-quote>  st>
+                          ],
+---
+
+The progress-line directive accepts three inputs:
+
+* `quote`
+* `author`**
+* `date`** 
+	      
+** (optional)	      
+ 
+---
+####quote (string)
+
+The quote input is a string of the quote you want displayed. There is currently no limit on its size,
+however, it is recomended that if it is large you make the card size medium or larger.
+
+
+####author (string) - optional
+
+The optional author input is a string of the name of the author of the quote, or any text you wish to display in the author section.  	
+ 
+###date (string) - optional
+
+The optional date input is a string of you wish to display with the quote. **This must be some kind of date string that Angular can accept. **   
+
