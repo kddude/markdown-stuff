@@ -169,7 +169,6 @@ example of `bad`:
        status-date="{{item.statusActionDate | date}}"
        status-subtext="Due to OSP in 2 days">
      </oris-status-block>
-            
 ---
 
 The status block directive accepts 5 inputs:
