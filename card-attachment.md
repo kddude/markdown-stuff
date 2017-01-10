@@ -13,7 +13,7 @@ This directive essentially wraps a stylized block around any content you want to
 	*** any content ***
 
 </oris-card-attachment>
-	```
+```
 
 ---
 
