@@ -8,7 +8,7 @@ A simple subheader in grey text.
 <oris-card-subheader
 	subheader="type subheader here">
 </oris-card-subheader>
-	```
+```
 
 ---
 
